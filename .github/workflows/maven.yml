@@ -1,46 +1,35 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Java CI with Maven
+name: Java CI with Maven & Docker Push
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Build with Maven
-      run: mvn clean install
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      steps:
-        - uses: actions/checkout@v3
-          name: Check out code
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
 
-        - uses: mr-smithers-excellent/docker-build-push@v6
-          name: Build & push Docker image
-          with:
-            image: vikramjoshi123/spring-ci-cd-test
-            tags: v1, latest
-            registry: registry-url.io
-            dockerfile: Dockerfile.ci
-            username: vikramdip40@gmail.com
-            password: Vikram@70
+      - name: Build with Maven
+        run: mvn clean install -DskipTests
 
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+          image: vikramjoshi123/spring-ci-cd-test
+          tags: v1, latest
+          dockerfile: Dockerfile.ci
+          registry: docker.io
+          username: "vikramdip40@gmail.com"
+          password: "Vikram@70"
