@@ -30,3 +30,17 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
+      steps:
+        - uses: actions/checkout@v3
+          name: Check out code
+
+        - uses: mr-smithers-excellent/docker-build-push@v6
+          name: Build & push Docker image
+          with:
+            image: vikramjoshi123/spring-ci-cd-test
+            tags: v1, latest
+            registry: registry-url.io
+            dockerfile: Dockerfile.ci
+            username: vikramdip40@gmail.com
+            password: Vikram@70
+
