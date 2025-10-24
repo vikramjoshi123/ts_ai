@@ -44,7 +44,7 @@ public class ChatController {
                 .map(s -> "data: " + s + "\n\n")
                 .concatWith(Flux.just("data: [DONE]\n\n"));
     }
-
+ 
     private static boolean containsKeyword(String text, String kw) {
         return text.toLowerCase().contains(kw.toLowerCase());
     }
