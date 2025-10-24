@@ -25,11 +25,11 @@ jobs:
         run: mvn clean install -DskipTests
 
       - name: Build & push Docker image
-        uses: vikramjoshi123/spring-ci-cd-test:tagname
+        uses: vikramjoshi123/spring-ci-cd-test
         with:
           image: vikramjoshi123/spring-ci-cd-test
           tags: v1, latest
           dockerfile: Dockerfile
           registry: docker.io
-          username: "vikramdip40@gmail.com" 
+          username: "vikramdip40@gmail.com"
           password: "Vikram@70"
