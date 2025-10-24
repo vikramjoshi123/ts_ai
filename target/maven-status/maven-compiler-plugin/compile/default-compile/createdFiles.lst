@@ -1,0 +1,14 @@
+com/hdfcbank/touchstone/ollamauser/entity/User.class
+com/hdfcbank/touchstone/ollamauser/entity/Department.class
+com/hdfcbank/touchstone/ollamauser/service/UserService.class
+com/hdfcbank/touchstone/ollamauser/entity/Role.class
+com/hdfcbank/touchstone/ollamauser/entity/Department$DepartmentBuilder.class
+com/hdfcbank/touchstone/ollamauser/controller/MainController.class
+com/hdfcbank/touchstone/ollamauser/service/OllamaService.class
+com/hdfcbank/touchstone/ollamauser/controller/ChatController.class
+com/hdfcbank/touchstone/ollamauser/entity/User$UserBuilder.class
+com/hdfcbank/touchstone/ollamauser/repository/UserRepository.class
+com/hdfcbank/touchstone/ollamauser/repository/RoleRepository.class
+com/hdfcbank/touchstone/ollamauser/repository/DepartmentRepository.class
+com/hdfcbank/touchstone/ollamauser/entity/Role$RoleBuilder.class
+com/hdfcbank/touchstone/ollamauser/OllamaUserApplication.class

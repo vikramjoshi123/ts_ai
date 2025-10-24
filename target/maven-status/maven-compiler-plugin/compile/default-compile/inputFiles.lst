@@ -1,0 +1,11 @@
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/OllamaUserApplication.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/controller/ChatController.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/controller/MainController.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/entity/Department.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/entity/Role.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/entity/User.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/repository/DepartmentRepository.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/repository/RoleRepository.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/repository/UserRepository.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/service/OllamaService.java
+/Users/vikramjoshi/Documents/Touchstone/ts_ai/src/main/java/com/hdfcbank/touchstone/ollamauser/service/UserService.java
